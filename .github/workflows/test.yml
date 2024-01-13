@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Get code
         uses: action/checkout@v4
+      - name: Install NodeJS
+        uses: action/setup-node@v3
         with:
           node-version: 18
       - name: Install dependencies
